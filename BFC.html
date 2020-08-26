@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 800px;
+        position: relative;
+      }
+
+      .aside {
+        width: 100px;
+        height: 150px;
+        float: left;
+        background: #f66;
+      }
+
+      .main {
+        height: 200px;
+        background: #fcc;
+        overflow: hidden;
+      }
+      .left {
+        width: 100px;
+        height: 150px;
+        float: left;
+        background: #f66;
+        margin: 50px;
+      }
+
+      .right {
+        height: 150px;
+        background: #fcc;
+        overflow: hidden;
+        margin: 50px;
+      }
+
+
+      .par {
+            border: 5px solid #fcc;
+            width: 300px;
+            /* overflow: hidden; */
+        }
+    
+        .child {
+            border: 5px solid #f66;
+            width:100px;
+            height: 100px;
+            float: left;
+        }
+
+    </style>
+  </head>
+  <body>
+    <body>
+
+      <!--  1  通过BFC不和浮动元素重叠：实现左侧固定，右侧自适应布局  -->
+      <div class="aside"></div>
+      <div class="main"></div>
+
+
+      <!--  2  同一个BFC的margin重叠  -->
+      <div class="left"></div>
+      <div class="right"></div>
+
+
+
+       <!--  3  清除元素内部浮动  -->
+  
+        <div class="par">
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+     
+
+    
+    </body>
+  </body>
+</html>
