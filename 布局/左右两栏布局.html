@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.content {
+    margin: 100px auto;
+}
+     .left1 {
+        width: 300px;
+        height: 300px;
+        background-color: #ccc;
+        float: left;
+
+     }
+     .right1 {
+        overflow: hidden;
+        height: 300px;
+        background-color:pink;
+     }
+
+
+     .left2 {
+        height: 300px;
+        background-color: #ccc;
+        overflow: hidden;
+
+     }
+     .right2 {
+        width: 300px;
+        float: right;
+
+        height: 300px;
+        background-color:pink;
+     }
+
+    
+
+    </style>
+</head>
+<body>
+    
+    <!-- 1.左侧宽度固定，右侧自适应 -->
+    <div class="content">
+        <div class="left1">左侧固定</div>
+
+        <div class="right1">右测自适应</div>
+
+    </div>
+
+
+    <!-- 2.左侧自适应，右侧宽度固定 -->
+    <div class="content">
+        <div class="right2">右测固定</div>
+        <div class="left2">左侧自适应</div>
+
+    </div>
+
+    
+
+    </div>
+</body>
+</html>

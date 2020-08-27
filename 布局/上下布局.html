@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.top1 {
+        height: 300px;
+        background-color: #ccc;
+ 
+     }
+
+     .bottom1 {
+ 
+        background-color:pink;
+     }
+
+
+.content2 {
+    display: flex;
+    flex-direction: column;
+}
+     .top2 {
+        height: 300px;
+        background-color: #ccc;
+     }
+
+     .bottom2 {
+ flex:1;
+ background-color:pink;
+}
+
+     .top3 {
+        /* height: auto; */
+        background-color: #ccc;
+     }
+
+     .bottom3 {
+ /* flex:1; */
+ height: 300px;
+
+ background-color:pink;
+}
+
+    </style>
+</head>
+<body>
+    <!-- 1.1上高度固定，下高度自适应   -->
+<!-- <div class="content">
+    <div class="top1">上高度固定</div>
+    <div class="bottom1">
+        <pre style='margin:0px'>下高度自适应
+
+
+            11
+
+            22
+
+
+        </pre>
+    </div> -->
+
+
+    <!-- 1.2上高度固定，下高度自适应   -->
+<!-- <div class="content2">
+    <div class="top2">上高度固定</div>
+    <div class="bottom2">
+        <pre style='margin:0px'>下高度自适应
+
+
+
+            11
+
+            22
+
+
+        </pre>
+    </div>
+</div> -->
+    <!-- 2.1下高度固定，上高度自适应   -->
+<div class="content3">
+    <div class="top3"> 
+        
+        <pre style='margin:0px'>
+
+
+
+        11
+
+        22
+
+
+    </pre>上高度自适应
+      
+
+</div>
+    <div class="bottom3">
+        下高度固定
+      
+    
+    </div></div>
+</body>
+</html>
