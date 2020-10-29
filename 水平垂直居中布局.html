@@ -6,13 +6,14 @@
     <title>Document</title>
     <style>
         .parent {
-            width: 200px;
-            height: 200px;
+            width: 500px;
+            height: 100px;
             background-color: #ccc;
+            margin: 20px 0;
         }
         .child {
-     width: 100px;
-            height: 100px;
+     /* width: 100px;
+            height: 100px; */
             background-color: pink;
         }
 
@@ -25,11 +26,34 @@ display: table-cell;
             display: inline-block;
             
         }
+        .par2 {
+display: flex;
+justify-content: center;
+align-items: center;
+        }
+
+        .par3 {
+            position: relative;
+        }
+        .chi3 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%)
+        }
+       
     </style>
 </head>
 <body>
     <div class="parent par1">
         <div class="child chi1">inline-block + text-align/vertical-align</div>
+    </div>
+ 
+    <div class="parent par2">
+        <div class="child chi2">flex + justify-content + align-items</div>
+    </div>
+    <div class="parent par3">
+        <div class="child chi3">absolute + transform</div>
     </div>
 </body>
 </html>
