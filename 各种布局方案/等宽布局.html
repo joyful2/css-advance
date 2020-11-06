@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .par {
+            width: 500px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
+        
+        .child {
+            height: 100px;
+            background-color: #ccc;
+        }
+        
+        .par1 {
+            display: flex;
+            margin-left: -10px;
+        }
+        
+        .par1>.child {
+            flex: 1;
+            margin-left: 10px;
+        }
+        
+        .par2 {
+            display: table;
+            /* width: 100%; */
+            table-layout: fixed;
+        }
+        
+        .par2>.child {
+            display: table-cell;
+            border-right: 10px solid transparent;
+            background-clip: padding-box;
+        }
+        
+        .par3>.child {
+            float: left;
+            width: 25%;
+            padding-right: 10px;
+            background-clip: content-box;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="par par1">
+        <div class="child  ">flex</div>
+        <div class="child  "></div>
+
+    </div>
+
+    <div class="par par2">
+        <div class="child   ">table</div>
+        <div class="child  ">table-layout: fixed;</div>
+
+    </div>
+    <div class="par par3">
+        <div class="child   ">float</div>
+        <div class="child  ">百分比</div>
+
+    </div>
+</body>
+
+</html>

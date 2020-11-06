@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.content {
+    margin: 100px auto;
+}
+.left {
+    
+        height: 300px;
+        background-color: #ccc;
+}
+     .left1a {
+        width: 300px;
+        float: left;
+     }
+
+.right {
+    height: 300px;
+        background-color:pink;
+}
+     .right1a {
+        overflow: hidden;
+
+     }
+
+
+     .left2a {
+ 
+        overflow: hidden;
+
+     }
+     .right2a {
+        width: 300px;
+        float: right;
+ 
+     }
+
+    .left1b {
+        width: 300px;
+        height: 300px;
+        background-color: #ccc;
+        float: left;
+    }
+.right1b {
+    margin-left: 300px;
+}
+.flex {
+    display: flex;
+}
+.left1c {
+    width: 300px;
+}
+.right1c {
+    flex:1
+}
+.table {
+    display: table;
+    width: 100%;
+    height: 100px;
+    table-layout: fixed;
+}
+.table > div {
+    display:table-cell;
+    
+}
+.left1d {
+    width: 300px;
+}
+.grid {
+    
+display: grid;
+    /* grid-template-columns: 300px auto 300px; */
+    grid-template-columns: 300px auto;
+    grid-template-rows: 300px;
+}
+
+.right2b {
+       float:right;
+       width: 300px;
+   }
+   .left2b {
+       margin-right:300px;
+   }
+    </style>
+</head>
+<body>
+    <h1>左侧固定/不固定+ 右测自适应</h1>
+    <!-- 1.左侧宽度固定，右侧自适应 -->
+    <div class="content">
+        <div class="left left1a">float</div>
+        <div class="right right1a">overflow-hidden</div>
+    </div>
+
+    <div class="content">
+        <div class="left left1b">float</div>
+        <div class="right right1b">margin(仅限左侧固定)</div>
+    </div>
+
+    <div class="content flex">
+        <div class="left left1c"> 左侧固定/不固定</div>
+        <div class="right right1c">flex:1</div>
+    </div>
+    <div class="content table">
+        <div class="left left1d">  左侧固定/不固定 </div>
+        <div class="right right1d">table-cell</div>
+    </div>
+    <div class="content grid">
+        <div class="left left1e">  grid </div>
+        <div class="right right1e"> </div>
+    </div>
+
+
+
+    <h1>右测固定/不固定+ 左侧自适应</h1>
+
+    <!-- 2.左侧自适应，右侧宽度固定 -->
+    <div class="content">
+        <div class="right right2a">float</div>
+        <div class="left left2a">overflow-hidden</div>
+
+    </div>
+    <div class="content">
+        <div class="right right2b">float</div>
+        <div class="left left2b">margin</div>
+
+    </div>
+
+    <!-- 其他方法同左侧固定/不固定，右侧自适应布局！ -->
+
+    </div>
+</body>
+</html>

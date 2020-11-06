@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 300px;
+            height: 100px;
+            background-color: #ccc;
+            margin: 20px;
+        }
+        .child {
+    
+            background-color: pink;
+        }
+
+        .par1 {
+             vertical-align: middle;
+            display: table-cell;
+ 
+        }
+   
+
+        .par2 {
+            display: flex;
+             align-items: center;
+        }
+
+        .par3 {
+            position: relative;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="parent par1">
+        <div class="child chi1">table-cell + vertical-align</div>
+    </div>
+    <div class="parent par2">
+        <div class="child chi2">flex</div>
+    </div>
+    <div class="parent par3">
+        <div class="child child3">absolute + transform</div>
+    </div>
+ 
+</body>
+</html>

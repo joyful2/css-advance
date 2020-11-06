@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .par {
+            width: 500px;
+            margin-bottom: 30px;
+        }
+        
+        .par>div {
+            background-color: #ccc;
+        }
+        
+        .par1 {
+            display: flex;
+        }
+        
+        .par>div {
+            border-right: 5px solid transparent;
+            background-clip: padding-box;
+        }
+        
+        .par2 {
+            display: table;
+            /* table-layout: fixed; */
+        }
+        
+        .par2>div {
+            display: table-cell;
+        }
+        
+        .par3 {
+            overflow: hidden;
+        }
+        
+        .par3>div {
+            float: left;
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="par par1">
+        <div class="l1  ">flex</div>
+        <div class="r1  ">
+            <p>属性值默认是strech </p>
+            <p>属性值默认是strech </p>
+        </div>
+
+
+    </div>
+
+    <div class="par par2">
+        <div class="l2   ">table</div>
+        <div class="r2  ">
+            <p>table-cell</p>
+            <p>table-cell</p>
+        </div>
+
+
+    </div>
+    <div class="par par3">
+        <div class="l3   ">float</div>
+        <div class="r3  ">
+            <p>padding-bottom + margin-bottom</p>
+            <p>padding-bottom + margin-bottom</p>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
